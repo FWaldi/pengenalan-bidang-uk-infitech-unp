@@ -6,6 +6,8 @@
   <title>Bidang Bisnis IT: Sebuah Pengantar</title>
   <meta name="description" content="Situs web presentasi interaktif yang memberikan gambaran umum tentang bidang-bidang utama di dunia bisnis IT, dirancang untuk pemula. Jelajahi topik mulai dari pemrograman dan desain hingga keamanan siber dan gaming.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 1. Menambahkan Babel Standalone untuk transpilasi JSX/TSX di browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -33,6 +35,7 @@
 <body class="bg-slate-900">
   <div id="root"></div>
   <noscript>Anda perlu mengaktifkan JavaScript untuk menjalankan aplikasi ini.</noscript>
-  <script type="module" src="./index.tsx"></script>
+  <!-- 2. Mengubah tipe skrip agar Babel dapat memprosesnya -->
+  <script type="text/babel" data-type="module" src="./index.tsx"></script>
 </body>
 </html>
