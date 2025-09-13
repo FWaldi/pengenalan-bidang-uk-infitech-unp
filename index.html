@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF--8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bidang Bisnis IT: Sebuah Pengantar</title>
+  <meta name="description" content="Situs web presentasi interaktif yang memberikan gambaran umum tentang bidang-bidang utama di dunia bisnis IT, dirancang untuk pemula. Jelajahi topik mulai dari pemrograman dan desain hingga keamanan siber dan gaming.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0"
+  }
+}
+</script>
+  <style>
+    .app-container::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      filter: blur(16px) brightness(0.3);
+      transition: background-image 0.7s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-900">
+  <div id="root"></div>
+  <noscript>Anda perlu mengaktifkan JavaScript untuk menjalankan aplikasi ini.</noscript>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
